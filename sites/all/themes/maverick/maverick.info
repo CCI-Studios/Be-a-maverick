@@ -1,0 +1,23 @@
+name = maverick
+description = maverick Custom
+core = 7.x
+
+;scripts[] = js/filename.js
+scripts[] = js/script.js
+scripts[] = js/slick/slick.js
+scripts[] = js/instagram.js
+scripts[] = js/mobile-menu.js
+scripts[] = js/form-validation.js
+
+stylesheets[all][] = stylesheets/screen.css
+stylesheets[all][] = js/slick/slick.css
+
+regions[navigation] = Navigation
+regions[header] = Header
+regions[help] = Help
+regions[front-blocks] = Front Block
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[widgets] = Widgets
+regions[footer] = Footer
+

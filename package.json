@@ -1,0 +1,19 @@
+{
+  "name": "maverick",
+  "version": "1.0.0",
+  "description": "Drupal 7.x Site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCI-Studios/Be-a-maverick.git"
+  },
+  "author": "hsanvaria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CCI-Studios/Be-a-maverick/issues"
+  },
+  "homepage": "https://github.com/CCI-Studios/Be-a-maverick#readme"
+}

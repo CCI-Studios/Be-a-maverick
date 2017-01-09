@@ -1,0 +1,23 @@
+{
+  "name": "maverick",
+  "version": "1.0.0",
+  "description": "Drupal 7.x Site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCI-Studios/Be-a-maverick.git"
+  },
+  "author": "hsanvaria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CCI-Studios/Be-a-maverick/issues"
+  },
+  "homepage": "https://github.com/CCI-Studios/Be-a-maverick#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

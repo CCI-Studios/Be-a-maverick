@@ -96,14 +96,17 @@
 
     <div id="main-wrapper"><div><div>
      <?php if(drupal_is_front_page())
-        {
+      {
           unset($page['content']['system_main']['default_message']);
-        } 
+      } 
       ?>
       <div id="content"><div><div>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+        <?php  if(arg(0) == 'cart' || arg(0) == 'checkout'){?>
+         
+        <?php }?>
         <?php print render($title_suffix); ?>
         <?php print $messages; ?>
         <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>

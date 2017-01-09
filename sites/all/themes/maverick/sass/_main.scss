@@ -4,7 +4,6 @@ body
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-
 	p
 	{
 		padding-bottom:10px;
@@ -751,14 +750,12 @@ ul.menu
 	}
 }
 
-.page-checkout,
-.page-cart
+.page-checkout
 {
 	.block-block-7,
 	.block-system-main
 	{
-		width: 50%;
-		float: left;
+		margin: 0 auto;
 	}
 
 	.block-block-7 .block-content
@@ -772,11 +769,90 @@ ul.menu
 	}
 }
 
+.commerce-order-handler-area-order-total .commerce-price-formatted-components
+{
+	width: 83%;
+	margin-top: 10px;
+	margin-left: 0px;
+	margin-right: auto;
+
+	tbody
+	{
+		padding-top: 10px;
+	}
+
+	td
+	{
+		padding: 10px 0px;
+	}
+
+	tr
+	{
+		background: white;
+		border: 0px;
+	}
+}
+
+#commerce-checkout-form-review
+{	
+	legend
+	{
+		margin-bottom: 20px;
+	}
+	
+	.views-field
+	{
+		display: inline-block;
+		width: 25%;
+		margin-right: -4px;
+		vertical-align: middle;
+	}
+
+	.views-row
+	{
+		padding: 10px 0px;
+	}
+
+	.view-header
+	{
+		span
+		{	
+			display: inline-block;
+			font-weight: bold;
+			width: 25%;
+		}
+	}
+
+	.views-label
+	{	
+		display: block;
+		font-weight: bold;
+	}
+
+
+}
+
 .block-views-maveick-hoodie-block-1
 {
 	.block-content
 	{
 		margin: 0 auto;
+	}
+
+	.views-field-field-image-pro
+	{
+		width: 220px;
+
+		img
+		{
+			width: 183px;
+			height: auto;
+		}
+	}
+
+	.form-type-select + p
+	{
+		display: none;
 	}
 }
 
@@ -866,7 +942,7 @@ ul.menu
 {
 	#page-title
 	{
-		display: none;
+		//display: none;
 	}
 
 	#edit-buttons
@@ -907,6 +983,14 @@ ul.menu
 	}
 }
 
+.checkout_review,
+.commerce_payment
+{
+	width: 50%;
+	float: left;
+	padding-top: 30px;
+}
+
 .block-block-5.front-block
 {
 	.text
@@ -924,7 +1008,17 @@ ul.menu
 
 .block-block-8
 {
-	float: left;
+	.views-row
+	{
+		overflow: hidden;
+	}
+	.views-field,
+	.form-item,p,form div
+	{
+		display: inline-block;
+		padding: 8px;
+		vertical-align: bottom;
+	}
 }
 
 .block-block-9
@@ -977,5 +1071,59 @@ ul.menu
 	{
 		width: 100%;
 		float: none;
+	}
+}
+
+#shopping-menu,
+.block-menu-menu-shopping-menu
+{	
+	padding: 30px 0px;
+
+	a
+	{
+		padding: 0px;
+	}
+
+	li
+	{
+		padding: 0px 10px;
+	}
+	
+	li,a
+	{
+		font-weight: 900!important;
+		text-transform: uppercase;
+	}
+
+	li.active,
+	li.active-trail
+	{
+		border-bottom: 2px solid black;
+	}
+}
+
+#commerce-checkout-form-review
+{
+	position: relative;
+}
+
+.commerce_payment
+{	
+	.fieldset-wrapper
+	{
+		padding-top: 30px;
+	}
+	&>legend
+	{
+		position: absolute;
+		left: 0px;
+	}
+}
+
+.checkout_review
+{
+	.checkout-review
+	{
+		padding-top: 50px;
 	}
 }

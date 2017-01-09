@@ -64,6 +64,36 @@
              $(this).html('<span class="single-word">' + word.substring(0, index) + '</span>');
            }
         });
+
+        var path = window.location.pathname;
+        var path_arr = path.split('/');
+        var menu = '.block-menu-menu-shopping-menu';
+       	if((path_arr[1] == 'cart' || path_arr[1] == 'checkout') && !path_arr[2])
+       	{
+       		$(menu+' li.active-trail').text('Step:1');
+       		$(menu+' .step2').text('Step:2');
+       		$(menu+' .step3').text('Step:3');
+       		$(menu+' .step4').text('Step:4');
+       	}
+   		if(path_arr[1] == 'checkout' && $.isNumeric(path_arr[2]) && !path_arr[3])
+       	{
+       		$(menu+' .step2').addClass('active').text('Step:2');
+       		$(menu+' .step3').text('Step:3');
+       		$(menu+' .step4').text('Step:4');
+       	}
+       	if(path_arr[1] == 'checkout' && $.isNumeric(path_arr[2]) && path_arr[3] == 'review')
+       	{
+       		$(menu+' .step3').addClass('active').text('Step:3');
+       		$(menu+' .step4').text('Step:4');
+       	}
+       	if(path_arr[1] == 'checkout' && $.isNumeric(path_arr[2]) && path_arr[3] == 'complete')
+       	{
+       		$(menu+' .step1').text('Step:1');
+       		$(menu+' .step2').text('Step:2');
+       		$(menu+' .step3').text('Step:3');
+       		$(menu+' .step4').addClass('active').text('Step:4');
+       	}
+
 		
 	});
 

@@ -37,4 +37,4 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
-/sites/all/themes/maverick/node_modules
+sites/all/themes/maverick/node_modules
